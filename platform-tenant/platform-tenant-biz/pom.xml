@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>platform-tenant</artifactId>
+        <groupId>com.qhh.platform</groupId>
+        <version>3.2.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>platform-tenant-biz</artifactId>
+    <name>${project.artifactId}</name>
+    <description>租户服务业务模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.qhh.platform</groupId>
+            <artifactId>platform-tenant-entity</artifactId>
+            <version>${platform-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qhh.platform</groupId>
+            <artifactId>platform-authority-biz</artifactId>
+            <version>${platform-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qhh.platform</groupId>
+            <artifactId>platform-tenant-datasource</artifactId>
+            <version>${platform-project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qhh.basic</groupId>
+            <artifactId>platform-mq-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.qhh.basic</groupId>
+            <artifactId>platform-databases</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qhh.basic</groupId>
+            <artifactId>platform-boot</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+        </dependency>
+
+        <!-- @RefreshScope 需要使用 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-context</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+</project>

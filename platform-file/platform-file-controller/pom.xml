@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>platform-file</artifactId>
+        <groupId>com.qhh.platform</groupId>
+        <version>3.2.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>platform-file-controller</artifactId>
+    <name>${project.artifactId}</name>
+    <description>文件服务接口模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.qhh.platform</groupId>
+            <artifactId>platform-file-biz</artifactId>
+            <version>${platform-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qhh.platform</groupId>
+            <artifactId>platform-oauth-api</artifactId>
+            <version>${platform-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qhh.basic</groupId>
+            <artifactId>platform-security-starter</artifactId>
+        </dependency>
+    </dependencies>
+</project>

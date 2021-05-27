@@ -1,0 +1,15 @@
+platform:
+  swagger:
+    docket:
+      auth:
+        title: 权限模块
+        base-package: com.qhh.platform.authority.controller.auth
+      common:
+        title: 公共模块
+        base-package: com.qhh.platform.authority.controller.common
+      core:
+        title: 组织模块
+        base-package: com.qhh.platform.authority.controller.core
+
+server:
+  port: 8764

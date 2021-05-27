@@ -1,0 +1,9 @@
+platform:
+  swagger:
+    docket:
+      tenant:
+        title: 租户模块
+        base-package: com.qhh.platform.tenant.controller
+
+server:
+  port: 8778

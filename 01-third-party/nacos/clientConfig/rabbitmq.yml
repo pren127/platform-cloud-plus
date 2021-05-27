@@ -1,0 +1,18 @@
+platform:
+  rabbitmq:
+    # 若系统中有除了zipkin之外的地方使用了mq ，则一定不能设置成false
+    enabled: false
+    ip: 127.0.0.1
+    port: 5672
+    username: 'platform'
+    password: 'platform'
+
+spring:
+  rabbitmq:
+    enabled: ${platform.rabbitmq.enabled}
+    host: ${platform.rabbitmq.ip}
+    port: ${platform.rabbitmq.port}
+    username: ${platform.rabbitmq.username}
+    password: ${platform.rabbitmq.password}
+    listener:
+      type: direct # simple direct
